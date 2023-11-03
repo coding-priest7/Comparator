@@ -4,7 +4,7 @@
 
 .diffhandsontable .add {
   background-color: #7fff7f;
-  /* background-color: red; */
+  /* background-color: #ff7f7f; */
 }
 
 .diffhandsontable .remove {
@@ -55,4 +55,20 @@
 }
 .diffhandsontable td:first-child {
   border-left: 1px solid #2d4068;
+}
+
+input[type="file"]::file-selector-button {
+  margin-right: 20px;
+  border: none;
+  /* background: #084cdf; */
+  background: #0074d9;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background: #0d45a5;
 }

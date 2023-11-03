@@ -10,12 +10,24 @@ interface DiffBtn {
 }
 
 const CenterHooks = (props: DiffBtn) => {
+  const buttonStyle = {
+    width: "100px",
+    height: "40px",
+    fontSize: "14px",
+    marginTop: "10px",
+  };
   return (
-    <div style={{ textAlign: "center" }}>
+    <div
+      style={{ textAlign: "center", marginTop: "140px", marginRight: "10px" }}
+      className="button-orientation"
+    >
       <Button
-        type="dashed"
-        size="small"
-        style={{ marginTop: 150 }}
+        // type="dashed"
+        type="primary"
+        // size="small"
+        size="large"
+        style={buttonStyle}
+        // style={{ marginTop: 150 }}
         onClick={(e) => props.onSampleBtnClick(e)}
       >
         {" Sample "}
@@ -24,7 +36,8 @@ const CenterHooks = (props: DiffBtn) => {
         ref={React.createRef()}
         id="btn-diff"
         type="primary"
-        style={{ marginTop: 10 }}
+        // style={{ marginTop: 10 }}
+        style={buttonStyle}
         size="large"
         onClick={(e) => props.onDiffBtnClick(e)}
       >
@@ -33,8 +46,12 @@ const CenterHooks = (props: DiffBtn) => {
       <Button
         ref={React.createRef()}
         id="btn-clean"
-        type="default"
-        style={{ marginTop: 10 }}
+        // type="default"
+        type="primary"
+        //added
+        size="large"
+        // style={{ marginTop: 10 }}
+        style={buttonStyle}
         onClick={(e) => props.onResetBtnClick(e)}
       >
         {" Reset "}
