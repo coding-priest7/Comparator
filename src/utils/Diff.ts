@@ -14,6 +14,7 @@ export const diff = (left: [][], right: [][], ref: React.RefObject<any>) => {
   let align = ct.align();
   let output = new daff.TableView([]);
   let flags = new daff.CompareFlags();
+  flags.filter("insert",false);
   flags.show_unchanged = false;
   flags.always_show_header = true;
   flags.always_show_order = true;

@@ -47,7 +47,7 @@ const RightHooks = (props: Right) => {
   return (
     <>
       <div className="right" style={{ padding: 10, marginTop: -25 }}>
-        <h1 style={{ marginLeft: 3 }}>{"Database File"}</h1>
+        <h1 style={{ marginLeft: 3 }}>{"Current File"}</h1>
         <ImportHooks
           sheetname={props.sheetname}
           sheetlist={props.sheetlist}

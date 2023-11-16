@@ -12,7 +12,7 @@ export interface SheetDomain {
 
 export class ExcelHelper {
   public static SheetJSFT = () => {
-    var jsft = ["xlsx"];
+    var jsft = ["xlsx","csv"];
     return jsft
       .map(function (x) {
         return "." + x;
@@ -77,7 +77,7 @@ export class ExcelHelper {
 
   public static SampleDataLeft = () => {
     var TestData = [
-      ["Date", "High", "Low", "Close", "Volume", "ask", "cash"],
+      ["Date & time", "High", "Low", "Close", "Volume", "ask", "Amount"],
       [
         "2019-07-08 00:00:00",
         "11540.33",
@@ -130,15 +130,15 @@ export class ExcelHelper {
 
   public static SampleDataRight = () => {
     var TestData = [
-      ["Date", "High", "Low", "Close", "Volume", "bid", "ask", "Buy"],
+      ["Date & time", "High", "Low", "Close", "Volume", "bid", "ask", "Buy"],
       [
         "2019-07-07 23:00:00",
         "11482.72",
         "11423.0",
         "11475.07",
         "32.99655899",
-        "6",
-        "0",
+        "5",
+        "1",
         "3",
       ],
       [
@@ -147,8 +147,8 @@ export class ExcelHelper {
         "11432.32",
         "11547.98",
         "67.915214697",
-        "6",
-        "0",
+        "7",
+        "2",
         "9",
       ],
       [
@@ -157,9 +157,9 @@ export class ExcelHelper {
         "11426.74",
         "11470.47",
         "31.1094771869",
-        "6",
-        "0",
-        "9",
+        "7",
+        "1",
+        "10",
       ],
       [
         "2019-07-07 17:20:00",
@@ -168,7 +168,7 @@ export class ExcelHelper {
         "11503.4",
         "121.5246740453",
 
-        "0",
+        "4",
         "9",
       ],
       [
@@ -177,9 +177,9 @@ export class ExcelHelper {
         "11135.01",
         "11200.6",
         "23.5194946648",
-        "6",
+        "3",
         "0",
-        "9",
+        "8",
       ],
       [
         "2019-07-07 15:00:00",
@@ -187,9 +187,9 @@ export class ExcelHelper {
         "11189.0",
         "11254.97",
         "64.0821938629",
-        "6",
-        "1",
-        "9",
+        "5",
+        "2",
+        "8",
       ],
     ];
 

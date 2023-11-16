@@ -3,7 +3,9 @@
 }
 
 .diffhandsontable .add {
-  background-color: #7fff7f;
+  /* background-color: #7fff7f; */
+  background-color: #fff;
+
   /* background-color: #ff7f7f; */
 }
 
